@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # index -> see all
+  get "tasks", to: "tasks#index"
 end
