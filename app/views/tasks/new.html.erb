@@ -1,7 +1,3 @@
-<%= form_with model: @task do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
-  <%= f.label :details %>
-  <%= f.text_field :details %>
-  <%= f.submit %>
-<% end %>
+<h1>Create a Task</h1>
+<%= render "form", task: @task %>
+<%= link_to "Back to Main Task List", tasks_path %>
